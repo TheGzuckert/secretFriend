@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\SeriesController;
+use App\Http\Controllers\AmigosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,12 +20,12 @@ Route::get('/', function () {
 
 // rotas que funcionam
 
-Route::get('/', [SeriesController::class, 'index']);
+Route::get('/', [AmigosController::class, 'index']);
 
-Route::get('/series', [SeriesController::class, 'index']);
+Route::get('/amigos', [AmigosController::class, 'index']);
 
-Route::get('/criar', [SeriesController::class, 'create']);
+Route::get('/criar', [AmigosController::class, 'create']);
 
-Route::post('/salvar', [SeriesController::class, 'store']);
+Route::post('/salvar', [AmigosController::class, 'store']);
 
-Route::post('/series', [SeriesController::class, 'store']);
+Route::post('/amigos', [AmigosController::class, 'store']);

@@ -6,19 +6,17 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Models\Friends;
 
-class SeriesController extends Controller
+class AmigosController extends Controller
 {
 public function index(Request $request)
 {
-    $series = Friends::all();
-    // dd($series);
-    return view('series.index', ['series' => $series]);
+    $amigos = Friends::all();
+    return view('amigos.index', ['amigos' => $amigos]);
 }
-
 
     public function create()
     {
-        return view('series.create');
+        return view('amigos.create');
     }
 
     public function store(Request $request)
@@ -30,7 +28,7 @@ public function index(Request $request)
 
         if ($amigoExistente) {
 
-            return redirect('/series')->with('error', 'Email já existe!');
+            return redirect('/amigos')->with('error', 'Email já existe!');
         }
 
         $amigo = new Friends();
@@ -38,22 +36,7 @@ public function index(Request $request)
         $amigo->email = $emailAmigo;
         $amigo->save();
 
-        return redirect('/series');
-    }
-
-    public function destroy(Request $request)
-    {
-        $id = $request->input('name');
-        Friends::destroy($id);
-
-        return redirect('/series');
-    }
-
-
-    public function edit($id)
-    {
-        $amigo = Friends::find($id);
-        return view('series.edit', ['amigo' => $amigo]);
+        return redirect('/amigos');
     }
 
 }

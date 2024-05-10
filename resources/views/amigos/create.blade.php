@@ -1,5 +1,5 @@
 <x-layout title="Adicionar novo amigo">
-  <form action="/series" method="post">
+  <form action="/amigos" method="post">
     @csrf
     <div class="mb-3">
        <label for="name" class="form-label">Nome:</label>

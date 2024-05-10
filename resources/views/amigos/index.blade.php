@@ -9,17 +9,17 @@
 
 <div class="mt-6">
   <p>Lista de Amigos no sorteio:</p>
-  <ul class="list-group">
-    @foreach ($series as $serie)
-    <li class="list-group-item d-flex justify-content-between">
-      <span>{{ $serie->name }}</span>
-      <div>
-        <a href="/edit/?id:{{ $serie->id }}" class="bi bi-pencil me-2"></a>
-        <a href="/delete/{{ $serie->id }}" class="bi bi-trash "></a>
-      </div>
-    </li>
+<ul class="list-group">
+    @foreach ($amigos as $amigo)
+        <li class="list-group-item d-flex justify-content-between">
+            <span>{{ $amigo->name }}</span>
+            <div>
+                <a href="/edit/?id={{ $amigo->id }}" class="bi bi-pencil me-2"></a>
+                <a href="/delete/{{ $amigo->id }}" class="bi bi-trash"></a>
+            </div>
+        </li>
     @endforeach
-  </ul>
+</ul>
 </div>
 
 
