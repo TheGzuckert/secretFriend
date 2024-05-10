@@ -1,4 +1,4 @@
-<x-layout title="Adicionar novo amigo">
+<x-layout title="Editar amigo">
   <form action="/series" method="post">
     @csrf
     <div class="mb-3">

@@ -21,24 +21,39 @@ public function index(Request $request)
         return view('series.create');
     }
 
-public function store(Request $request)
-{
-    $nomeAmigo = $request->input('name');
-    $emailAmigo = $request->input('email');
+    public function store(Request $request)
+    {
+        $nomeAmigo = $request->input('name');
+        $emailAmigo = $request->input('email');
 
-    $amigoExistente = Friends::where('email', $emailAmigo)->first();
+        $amigoExistente = Friends::where('email', $emailAmigo)->first();
 
-    if ($amigoExistente) {
+        if ($amigoExistente) {
 
-        return redirect('/series')->with('error', 'Email já existe!');
+            return redirect('/series')->with('error', 'Email já existe!');
+        }
+
+        $amigo = new Friends();
+        $amigo->name = $nomeAmigo;
+        $amigo->email = $emailAmigo;
+        $amigo->save();
+
+        return redirect('/series');
     }
 
-    $amigo = new Friends();
-    $amigo->name = $nomeAmigo;
-    $amigo->email = $emailAmigo;
-    $amigo->save();
+    public function destroy(Request $request)
+    {
+        $id = $request->input('name');
+        Friends::destroy($id);
 
-    return redirect('/series');
-}
+        return redirect('/series');
+    }
+
+
+    public function edit($id)
+    {
+        $amigo = Friends::find($id);
+        return view('series.edit', ['amigo' => $amigo]);
+    }
 
 }

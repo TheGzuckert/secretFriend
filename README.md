@@ -78,6 +78,8 @@ criar esquema de validação para inputs
 
 criar tela de sorteio
 
+criar input para filtrar os usuários
+
 
 
 ### Para rodar o projeto você deve rodar o seguinte comando:
@@ -85,7 +87,7 @@ criar tela de sorteio
 php artisan serve
 ```
 
-### E para rodar o front-end você precisa rodar o seguinte comando:
+### Náo é necessario docker para rodar a aplicação, mas se quiser rodar com docker, basta rodar o seguinte comando:
 ```bash
-npm run dev
+docker-compose up
 ```

@@ -2,8 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SeriesController;
-// use App\Http\Controllers\Alunos;
-// use App\Http\Controllers\Animes;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +17,10 @@ use App\Http\Controllers\SeriesController;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// rotas que funcionam
+
+Route::get('/', [SeriesController::class, 'index']);
 
 Route::get('/series', [SeriesController::class, 'index']);
 
