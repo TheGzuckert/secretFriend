@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SeriesController;
+// use App\Http\Controllers\Alunos;
+// use App\Http\Controllers\Animes;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +19,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/series', [SeriesController::class, 'index']);
+
+// Route::get('/alunos', [Alunos::class, 'index']);
