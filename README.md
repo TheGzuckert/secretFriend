@@ -64,3 +64,28 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+eloquent orm esta sendo ultilizado para gerenciar as tabelas do banco de dados
+
+mudar para mysql
+
+refatorar design
+
+criar metodo que deleta aluno
+
+criar esquema de validação para inputs
+
+criar tela de sorteio
+
+
+
+### Para rodar o projeto você deve rodar o seguinte comando:
+```bash
+php artisan serve
+```
+
+### E para rodar o front-end você precisa rodar o seguinte comando:
+```bash
+npm run dev
+```

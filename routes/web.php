@@ -22,4 +22,8 @@ Route::get('/', function () {
 
 Route::get('/series', [SeriesController::class, 'index']);
 
-// Route::get('/alunos', [Alunos::class, 'index']);
+Route::get('/criar', [SeriesController::class, 'create']);
+
+Route::post('/salvar', [SeriesController::class, 'store']);
+
+Route::post('/series', [SeriesController::class, 'store']);
