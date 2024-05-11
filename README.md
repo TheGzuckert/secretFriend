@@ -8,7 +8,7 @@ Não tenho muita familiaridade com a linguagem mas estou aprendendo e  me divert
 Bom chega é isso de enrolação e vamos lá!!!
 
 ### Requisitos:
-- PHP 7.4
+- >= PHP 8.0
 - Composer
 - Laravel 9
 
