@@ -1,3 +1,37 @@
+### Bem vindo ao Desafio do Amigo Secreto
+Primeiramente muito obrigado se você esta lendo isso
+
+O projeto foi desenvolvido na versão 9 do Laravel
+
+Não tenho muita familiaridade com a linguagem mas estou aprendendo  me divertindo muito com o processo
+
+Bom chega de enrolação e vamos lá!!!
+
+### Para rodar o projeto você deve rodar o seguinte comando:
+```bash
+php artisan serve
+```
+
+### Náo é necessario docker para rodar a aplicação, mas se quiser rodar com docker, basta rodar o seguinte comando:
+```bash
+docker-compose up
+```
+
+TODO:
+
+- [x] refatorar design
+
+- [x] criar metodo que deleta aluno
+
+- [x]  criar input para filtrar os usuários
+
+- []  criar esquema de validação para inputs
+
+- []  mudar para mysql
+
+- []  criar tela de sorteio e realizar sorteio
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -67,27 +101,3 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 
 eloquent orm esta sendo ultilizado para gerenciar as tabelas do banco de dados
-
-mudar para mysql
-
-refatorar design
-
-criar metodo que deleta aluno
-
-criar esquema de validação para inputs
-
-criar tela de sorteio
-
-criar input para filtrar os usuários
-
-
-
-### Para rodar o projeto você deve rodar o seguinte comando:
-```bash
-php artisan serve
-```
-
-### Náo é necessario docker para rodar a aplicação, mas se quiser rodar com docker, basta rodar o seguinte comando:
-```bash
-docker-compose up
-```
