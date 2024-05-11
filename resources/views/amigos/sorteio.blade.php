@@ -1,4 +1,9 @@
 <x-layout title="Sorteio de Amigos">
+  @if (session('error'))
+    <script>
+        alert('{{ session('error') }}');
+    </script>
+@endif
   <div class="mt-3">
   </div>
   <div class="input-group-append d- mt-3 mb-3">

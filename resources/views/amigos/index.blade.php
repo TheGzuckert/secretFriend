@@ -1,14 +1,14 @@
 <x-layout title="Sorteio de Amigo Secreto" class="justify-content-between text-center">
 
-  <form action="/buscar-amigo" method="GET" class="mt-2 mb-2">
+  <form action="/buscar-amigo" method="GET" class="mt-2 mb-4">
       <label for="busca" class="form-label">Buscar Amigo</label>
       <div class="row">
-          <div class="col-md-6">
-              <input type="text" name="busca" id="busca" class="form-control" placeholder="Digite o nome ou e-mail do amigo">
+          <div class="col-md-6 d-flex">
+              <input type="text" name="busca" id="busca" class="form-control" style="margin-right: 10px;" placeholder="Digite o nome ou e-mail do amigo">
+              <button type="submit" class="btn btn-dark">Buscar</button>
           </div>
           <div class="col-md-6">
               <div class="input-group-append d-flex justify-content-end">
-                  <button type="submit" class="btn btn-dark">Buscar</button>
                   <a href="/criar" class="btn btn-dark ms-2">Adicionar</a>
                   <a href="/sorteio" class="btn btn-dark ms-2">Sortear</a>
               </div>
@@ -17,8 +17,8 @@
   </form>
 
 
-  <div class="mt-6">
-    <p>Lista de Amigos no sorteio</p>
+  <div class="">
+      <label class="form-label">Lista de amigos para sorter</label>
     <ul class="list-group">
         <li class="list-group-item d-flex justify-content-between align-items-center">
             <strong>Nome</strong>
@@ -43,5 +43,13 @@
         @endforeach
     </ul>
   </div>
+
+  @if (session('error'))
+    <script>
+        window.onload = function() {
+            alert('{{ session('error') }}');
+        }
+    </script>
+@endif
 
 </x-layout>

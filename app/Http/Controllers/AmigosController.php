@@ -73,6 +73,10 @@ class AmigosController extends Controller
     {
         $amigos = Friends::all()->shuffle();
 
+        if (count($amigos) < 2) {
+            return redirect('/')->with('error', 'Não temos amigos suficientes para realizar o sorteio');
+        }
+
         $sorteio = [];
 
         while (count($amigos) > 1) {
@@ -94,6 +98,7 @@ class AmigosController extends Controller
 
         return view('amigos.sorteio', compact('sorteio'));
     }
+
 
     public function buscarAmigo(Request $request)
     {
