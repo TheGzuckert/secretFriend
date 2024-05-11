@@ -3,19 +3,37 @@ Primeiramente muito obrigado se você esta lendo isso
 
 O projeto foi desenvolvido na versão 9 do Laravel
 
-Não tenho muita familiaridade com a linguagem mas estou aprendendo  me divertindo muito com o processo
+Não tenho muita familiaridade com a linguagem mas estou aprendendo e  me divertindo muito com o processo
 
 Bom chega é isso de enrolação e vamos lá!!!
+
+### Requisitos:
+- PHP 7.4
+- Composer
+- Laravel 9
+
+### Clonand o prijeto:
+```bash
+git clone https://github.com/TheGzuckert/mvc.git
+```
+
+### Rodando as migratoins:
+```bash
+php artisan migrate
+```
+Esse comando serve pra criar as tabelas no banco de dados
 
 ### Para rodar o projeto você deve rodar o seguinte comando:
 ```bash
 php artisan serve
 ```
 
-### Náo é necessario docker para rodar a aplicação, mas se quiser rodar com docker, basta rodar o seguinte comando:
-```bash
-docker-compose up
-```
+### Observações
+ - Acabei optando por ultilizar um banco sqlite pois assim ficaria mais simples ao clonar o projeto, visto que não seria necessario criar um servidor sql com o workbanch na sua maquina
+
+  - O projeto foi desenvolvido com o intuito de ser simples e objetivo, por isso ultilzie o bootstrap somente para estilizar a aplicação
+
+  - Náo é necessario docker para rodar a aplicação
 
 TODO:
 
@@ -32,8 +50,6 @@ TODO:
 - [x]  criar esquema de validação para inputs
 
 - [ ] criar popUp para notificar o usuario que com somente um aluno náo é possivel realizar o sorteio
-
-- [ ]  mudar para mysql
 
 
 
