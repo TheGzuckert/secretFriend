@@ -68,4 +68,36 @@ class AmigosController extends Controller
         }
     }
 
+
+
+    public function sorteio()
+    {
+        $amigos = Friends::all()->shuffle();
+
+        $sorteio = [];
+
+        while (count($amigos) > 1) {
+            $amigo1 = $amigos->pop();
+            $amigo2 = $amigos->pop();
+
+            $sorteio[] = [
+                'amigo1' => $amigo1->name,
+                'amigo2' => $amigo2->name
+            ];
+        }
+
+        // Caso haja um número ímpar de amigos, o último amigo será emparelhado com o primeiro da lista
+        if (!$amigos->isEmpty()) {
+            $sorteio[] = [
+                'amigo1' => $amigos->first()->name,
+                'amigo2' => $sorteio[0]['amigo1']
+            ];
+        }
+
+        return view('amigos.sorteio', compact('sorteio'));
+    }
+
+
+
+
 }

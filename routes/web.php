@@ -18,23 +18,32 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// rotas que funcionam
+
+//  Rotas principais da aplicação
 
 Route::get('/', [AmigosController::class, 'index']);
 
 Route::get('/amigos', [AmigosController::class, 'index']);
 
-Route::post('/amigos', [AmigosController::class, 'store']);
 
+//  Rota para criar um novo amigo
 Route::get('/criar', [AmigosController::class, 'create']);
 
+//  Rota para armazenar amigo/user
+Route::post('/amigos', [AmigosController::class, 'store']);
+
+//  Rota para deletar amigo/user
 Route::delete('/amigos/{id}', [AmigosController::class, 'destroy']);
 
+//  Rota para editar amigo/user
 Route::get('/amigos/{id}/edit', [AmigosController::class, 'edit']);
 
+//  Rota para atualizar amigo/user
 Route::put('/amigos/{id}', [AmigosController::class, 'update']);
 
+//  Rota para pegar informações especifias de um amigo/user <- Refatorar amanhã
 Route::get('/amigos/{id}/edit', [AmigosController::class, 'edit'])->name('amigos.edit');
-Route::put('/amigos/{id}', [AmigosController::class, 'update'])->name('amigos.update');
 
-// Route::get('/amigos/{id}/edit', 'AmigosController)->name('amigos.edit');
+
+//  Rota para realizar sorterio dos alunos
+Route::get('/sorteio', [AmigosController::class, 'sorteio']);
