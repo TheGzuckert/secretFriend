@@ -16,7 +16,7 @@
         <strong>Amigos sorteados</strong>
       </li>
       @foreach ($sorteio as $par)
-        <li class="list-group-item d-flex justify-content-center">{{ $par['amigo1'] }} x {{ $par['amigo2'] }}</li>
+        <li class="list-group-item d-flex justify-content-center">{{ $par['amigo1'] }} com {{ $par['amigo2'] }}</li>
       @endforeach
     </ul>
   </div>

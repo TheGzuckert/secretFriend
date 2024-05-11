@@ -39,13 +39,11 @@ class AmigosController extends Controller
         return redirect('/amigos');
     }
 
-
     public function edit($id)
     {
         $amigo = Friends::find($id);
         return view('amigos.edit', compact('amigo'));
     }
-
 
     public function update(Request $request, $id)
     {
@@ -74,27 +72,29 @@ class AmigosController extends Controller
         $amigos = Friends::all()->shuffle();
 
         if (count($amigos) < 2) {
-            return redirect('/')->with('error', 'Não temos amigos suficientes para realizar o sorteio');
+            return redirect('/amigos')->with('error', 'Não temos amigos suficientes para realizar o sorteio');
         }
 
         $sorteio = [];
+        $amigoAnterior = $amigos->first();
 
-        while (count($amigos) > 1) {
-            $amigo1 = $amigos->pop();
-            $amigo2 = $amigos->pop();
+        foreach ($amigos as $index => $amigo) {
+            if ($index == 0) {
+                continue;
+            }
 
             $sorteio[] = [
-                'amigo1' => $amigo1->name,
-                'amigo2' => $amigo2->name
+                'amigo1' => $amigoAnterior->name,
+                'amigo2' => $amigo->name
             ];
+
+            $amigoAnterior = $amigo;
         }
 
-        if (!$amigos->isEmpty()) {
-            $sorteio[] = [
-                'amigo1' => $amigos->first()->name,
-                'amigo2' => $sorteio[0]['amigo1']
-            ];
-        }
+        $sorteio[] = [
+            'amigo1' => $amigoAnterior->name,
+            'amigo2' => $amigos->first()->name
+        ];
 
         return view('amigos.sorteio', compact('sorteio'));
     }

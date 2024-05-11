@@ -11967,3 +11967,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+
+.bi-trash:hover {
+    color: red;
+}
