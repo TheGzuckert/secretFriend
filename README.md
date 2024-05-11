@@ -41,6 +41,12 @@ php artisan serve
 
   - Náo é necessario docker para rodar a aplicação
 
+### O que fiz de a mais:
+- Coloquei alguns regex para validaçao de e-mail dos usuários
+- Coloquei icones com cores para quando usuário passar com o mouse mudar de cor
+- Consegui deixar duas operações em uma pagina só (DELETE e GET) na home do projeto
+- Quase todos os componentes visuais estão com bootstrap, foram poucos os lugares que ultilizei css puro 
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
