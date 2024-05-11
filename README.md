@@ -27,7 +27,7 @@ TODO:
 
 - [x] criar metodo que edita aluno
 
-- []  criar esquema de validação para inputs
+- [ ]  criar esquema de validação para inputs
 
 - [ ]  mudar para mysql
 
