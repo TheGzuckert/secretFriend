@@ -14,7 +14,8 @@ Bom chega é isso de enrolação e vamos lá!!!
 
 ## Configurando Ambiente
 
-### Renomeie o arquivo .env.example para .env ou crie um novo arquivo .env e copie o conteúdo do .env.example
+### Variaveis de ambiente|
+- Renomeie o arquivo .env.example para .env ou crie um novo arquivo .env e copie o conteúdo do .env.example
 
 ### Executando composer para instalar as dependências do Laravel:
 ```bash
@@ -39,24 +40,6 @@ php artisan serve
   - O projeto foi desenvolvido com o intuito de ser simples e objetivo, por isso ultilzie o bootstrap que já vem com o laravel
 
   - Náo é necessario docker para rodar a aplicação
-
-TODO:
-
-- [x] refatorar design
-
-- [x] criar metodo que deleta aluno
-
-- [x]  criar input para filtrar os usuários
-
-- [x] criar metodo que edita aluno
-
-- [x]  criar tela de sorteio e realizar sorteio
-
-- [x]  criar esquema de validação para inputs
-
-- [ ] criar popUp para notificar o usuario que com somente um aluno náo é possivel realizar o sorteio
-
-
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
