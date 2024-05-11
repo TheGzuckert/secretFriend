@@ -1,10 +1,7 @@
-### Bem vindo ao Desafio do Amigo Secreto
+## Bem vindo ao Desafio do Amigo Secreto
 Primeiramente muito obrigado se você esta lendo isso
-
 O projeto foi desenvolvido na versão 9 do Laravel
-
 Não tenho muita familiaridade com a linguagem mas estou aprendendo  me divertindo muito com o processo
-
 Bom chega de enrolação e vamos lá!!!
 
 ### Para rodar o projeto você deve rodar o seguinte comando:
