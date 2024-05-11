@@ -69,7 +69,6 @@ class AmigosController extends Controller
     }
 
 
-
     public function sorteio()
     {
         $amigos = Friends::all()->shuffle();
@@ -86,7 +85,6 @@ class AmigosController extends Controller
             ];
         }
 
-        // Caso haja um número ímpar de amigos, o último amigo será emparelhado com o primeiro da lista
         if (!$amigos->isEmpty()) {
             $sorteio[] = [
                 'amigo1' => $amigos->first()->name,
@@ -96,8 +94,5 @@ class AmigosController extends Controller
 
         return view('amigos.sorteio', compact('sorteio'));
     }
-
-
-
 
 }
