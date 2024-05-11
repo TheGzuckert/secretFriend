@@ -19,7 +19,8 @@
   function checkInput() {
     var name = document.getElementById('name').value;
     var email = document.getElementById('email').value;
-    if (name !== "" && email !== "") {
+    var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    if (name !== "" && emailRegex.test(email)) {
       document.getElementById('submitButton').disabled = false;
     } else {
       document.getElementById('submitButton').disabled = true;
