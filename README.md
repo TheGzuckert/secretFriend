@@ -10,7 +10,7 @@ Bom chega é isso de enrolação e vamos lá!!!
 ### Requisitos:
 - PHP >= 8.0
 - Composer
-- Laravel 9
+- Laravel 8
 
 ## Configurando Ambiente
 
