@@ -95,4 +95,15 @@ class AmigosController extends Controller
         return view('amigos.sorteio', compact('sorteio'));
     }
 
+    public function buscarAmigo(Request $request)
+    {
+        $busca = $request->input('busca');
+
+        $amigos = Friends::where('email', 'LIKE', '%' . $busca . '%')
+                        ->orWhere('name', 'LIKE', '%' . $busca . '%')
+                        ->get();
+
+        return view('amigos.index', compact('amigos'));
+    }
+
 }

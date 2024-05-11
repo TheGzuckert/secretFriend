@@ -18,13 +18,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
 //  Rotas principais da aplicação
 
 Route::get('/', [AmigosController::class, 'index']);
 
 Route::get('/amigos', [AmigosController::class, 'index']);
-
 
 //  Rota para criar um novo amigo
 Route::get('/criar', [AmigosController::class, 'create']);
@@ -44,6 +42,8 @@ Route::put('/amigos/{id}', [AmigosController::class, 'update']);
 //  Rota para pegar informações especifias de um amigo/user <- Refatorar amanhã
 Route::get('/amigos/{id}/edit', [AmigosController::class, 'edit'])->name('amigos.edit');
 
-
 //  Rota para realizar sorterio dos alunos
 Route::get('/sorteio', [AmigosController::class, 'sorteio']);
+
+// Rota para buscar um amigo
+Route::get('/buscar-amigo', [AmigosController::class, 'buscarAmigo']);
