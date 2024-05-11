@@ -39,4 +39,16 @@ public function index(Request $request)
         return redirect('/amigos');
     }
 
+    public function destroy($id)
+    {
+        $amigo = Friends::find($id);
+        if ($amigo) {
+            $amigo->delete();
+            return redirect('/amigos')->with('success', 'Amigo deletado com sucesso!');
+        } else {
+            return redirect('/amigos')->with('error', 'Amigo não encontrado!');
+        }
+    }
+
+
 }

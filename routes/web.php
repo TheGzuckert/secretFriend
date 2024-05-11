@@ -24,8 +24,8 @@ Route::get('/', [AmigosController::class, 'index']);
 
 Route::get('/amigos', [AmigosController::class, 'index']);
 
+Route::post('/amigos', [AmigosController::class, 'store']);
+
 Route::get('/criar', [AmigosController::class, 'create']);
 
-Route::post('/salvar', [AmigosController::class, 'store']);
-
-Route::post('/amigos', [AmigosController::class, 'store']);
+Route::delete('/amigos/{id}', [AmigosController::class, 'destroy']);
