@@ -34,11 +34,11 @@ php artisan serve
 ```
 
 ### Observações
- - Acabei optando por ultilizar um banco sqlite pois assim ficaria mais simples ao clonar o projeto, visto que não seria necessario criar um servidor sql com o workbanch na sua maquina
+  - Acabei optando por ultilizar um banco sqlite pois assim ficaria mais simples ao clonar o projeto
 
   - O projeto foi desenvolvido com o intuito de ser simples e objetivo, por isso ultilzie o bootstrap que já vem com o laravel
 
-  - Náo é necessario docker para rodar a aplicação somente o php e o composer
+  - Náo é necessario docker para rodar a aplicação
 
 TODO:
 
