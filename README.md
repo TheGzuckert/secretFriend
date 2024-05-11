@@ -25,11 +25,11 @@ TODO:
 
 - [x]  criar input para filtrar os usuários
 
-- []  criar esquema de validação para inputs
+- [ ]  criar esquema de validação para inputs
 
-- []  mudar para mysql
+- [ ]  mudar para mysql
 
-- []  criar tela de sorteio e realizar sorteio
+- [ ]  criar tela de sorteio e realizar sorteio
 
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
