@@ -14,7 +14,7 @@ Bom chega é isso de enrolação e vamos lá!!!
 
 ## Configurando Ambiente
 
-### Variaveis de ambiente|
+### Variaveis de ambiente
 - Renomeie o arquivo .env.example para .env ou crie um novo arquivo .env e copie o conteúdo do .env.example
 
 ### Executando composer para instalar as dependências do Laravel:
