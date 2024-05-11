@@ -25,7 +25,9 @@ TODO:
 
 - [x]  criar input para filtrar os usuários
 
-- [ ]  criar esquema de validação para inputs
+- [x] criar metodo que edita aluno
+
+- []  criar esquema de validação para inputs
 
 - [ ]  mudar para mysql
 

@@ -14,19 +14,18 @@
         <li class="list-group-item d-flex justify-content-between ">
             <span>{{ $amigo->name }}</span>
             <div>
-                <a href="/edit/?id={{ $amigo->id }}" class="bi bi-pencil me-2"></a>
-                <form action="/amigos/{{ $amigo->id }}" method="POST" class="d-inline">
-                    @csrf
-                    @method('DELETE')
-                    <button type="submit" class="bi bi-trash btn btn-link"></button>
-                </form>
-            </div>
-        </li>
-    @endforeach
-</ul>
+                    <a href="/amigos/{{ $amigo->id }}/edit" class="bi bi-pencil me-2"></a>                  
+                      </form>
+                      <form action="/amigos/{{ $amigo->id }}" method="POST" class="d-inline">
+                          @csrf
+                          @method('DELETE')
+                          <button type="submit" class="bi bi-trash btn btn-link"></button>
+                      </form>
+                  </div>
+              </li>
+          @endforeach
+      </ul>
 </div>
-
-
 
   <div class="d-flex justify-content-between mt-5">
     <a href="/criar" class="btn btn-dark">Adicionar</a>

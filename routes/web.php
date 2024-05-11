@@ -29,3 +29,12 @@ Route::post('/amigos', [AmigosController::class, 'store']);
 Route::get('/criar', [AmigosController::class, 'create']);
 
 Route::delete('/amigos/{id}', [AmigosController::class, 'destroy']);
+
+Route::get('/amigos/{id}/edit', [AmigosController::class, 'edit']);
+
+Route::put('/amigos/{id}', [AmigosController::class, 'update']);
+
+Route::get('/amigos/{id}/edit', [AmigosController::class, 'edit'])->name('amigos.edit');
+Route::put('/amigos/{id}', [AmigosController::class, 'update'])->name('amigos.update');
+
+// Route::get('/amigos/{id}/edit', 'AmigosController)->name('amigos.edit');

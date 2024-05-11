@@ -8,11 +8,11 @@ use App\Models\Friends;
 
 class AmigosController extends Controller
 {
-public function index(Request $request)
-{
-    $amigos = Friends::all();
-    return view('amigos.index', ['amigos' => $amigos]);
-}
+    public function index(Request $request)
+    {
+        $amigos = Friends::all();
+        return view('amigos.index', compact('amigos'));
+    }
 
     public function create()
     {
@@ -39,6 +39,24 @@ public function index(Request $request)
         return redirect('/amigos');
     }
 
+
+    public function edit($id)
+    {
+        $amigo = Friends::find($id);
+        return view('amigos.edit', compact('amigo'));
+    }
+
+
+    public function update(Request $request, $id)
+    {
+        $amigo = Friends::find($id);
+        $amigo->name = $request->input('name');
+        $amigo->email = $request->input('email');
+        $amigo->save();
+
+         return redirect('/amigos');
+    }
+
     public function destroy($id)
     {
         $amigo = Friends::find($id);
@@ -49,6 +67,5 @@ public function index(Request $request)
             return redirect('/amigos')->with('error', 'Amigo não encontrado!');
         }
     }
-
 
 }
