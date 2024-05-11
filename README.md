@@ -8,22 +8,27 @@ Não tenho muita familiaridade com a linguagem mas estou aprendendo e  me divert
 Bom chega é isso de enrolação e vamos lá!!!
 
 ### Requisitos:
-- >= PHP 8.0
+- PHP 7.4
 - Composer
 - Laravel 9
 
-### Clonand o prijeto:
+## Configurando Ambiente
+
+### Renomeie o arquivo .env.example para .env ou crie um novo arquivo .env e copie o conteúdo do .env.example
+
+### Executando composer para instalar as dependências do Laravel:
 ```bash
-git clone https://github.com/TheGzuckert/mvc.git
+composer install
 ```
 
-### Rodando as migratoins:
+### Rodando as migratoins para criar as tabelas do banco de dados
 ```bash
 php artisan migrate
 ```
-Esse comando serve pra criar as tabelas no banco de dados
 
-### Para rodar o projeto você deve rodar o seguinte comando:
+## Rodando projeto
+
+### Para rodar o projeto execute o comando:
 ```bash
 php artisan serve
 ```
@@ -31,9 +36,9 @@ php artisan serve
 ### Observações
  - Acabei optando por ultilizar um banco sqlite pois assim ficaria mais simples ao clonar o projeto, visto que não seria necessario criar um servidor sql com o workbanch na sua maquina
 
-  - O projeto foi desenvolvido com o intuito de ser simples e objetivo, por isso ultilzie o bootstrap somente para estilizar a aplicação
+  - O projeto foi desenvolvido com o intuito de ser simples e objetivo, por isso ultilzie o bootstrap que já vem com o laravel
 
-  - Náo é necessario docker para rodar a aplicação
+  - Náo é necessario docker para rodar a aplicação somente o php e o composer
 
 TODO:
 
