@@ -35,7 +35,7 @@ php artisan serve
 ```
 
 ### Observações
-  - Acabei optando por ultilizar um banco sqlite pois assim ficaria mais simples ao clonar o projeto
+  - Acabei optando por ultilizar um banco sqlite pois assim ficaria mais simples desenvolver o projeto sem a necessidade de subir servidor para o banco
   - O projeto foi desenvolvido com o intuito de ser simples e objetivo, por isso ultilzie o bootstrap que já vem com o laravel
   - Náo é necessario docker para rodar a aplicação
 
@@ -43,7 +43,8 @@ php artisan serve
 - Coloquei alguns regex para validaçao de e-mail dos usuários
 - Coloquei icones com cores para quando usuário passar com o mouse mudar de cor
 - Consegui deixar duas operações em uma pagina só (DELETE e GET) na home do projeto
-- Quase todos os componentes visuais estão com bootstrap, foram poucos os lugares que ultilizei css puro 
+- Quase todos os componentes visuais estão com bootstrap, foram poucos os lugares que ultilizei css puro
+
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
