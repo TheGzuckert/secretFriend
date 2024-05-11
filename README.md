@@ -36,9 +36,7 @@ php artisan serve
 
 ### Observações
   - Acabei optando por ultilizar um banco sqlite pois assim ficaria mais simples ao clonar o projeto
-
   - O projeto foi desenvolvido com o intuito de ser simples e objetivo, por isso ultilzie o bootstrap que já vem com o laravel
-
   - Náo é necessario docker para rodar a aplicação
 
 ### O que fiz de a mais:
