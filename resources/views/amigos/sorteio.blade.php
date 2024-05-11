@@ -1,8 +1,19 @@
-<x-layout title="Sorteio de Amigo Secreto">
+<x-layout title="Sorteio de Amigos">
+  <div class="mt-3">
+  </div>
+  <div class="input-group-append d- mt-3 mb-3">
+    <a href="/criar" class="btn btn-dark">Adicionar novo amigo</a>
+    <a href="/sorteio" class="btn btn-dark">Sortear novamente</a>
+  </div>
+  <div style="max-width: 320px;">
     <ul class="list-group">
-        @foreach ($sorteio as $par)
-            <li class="list-group-item">{{ $par['amigo1'] }} x {{ $par['amigo2'] }}</li>
-        @endforeach
+      <li class="list-group-item d-flex justify-content-center">
+        <strong>Amigos sorteados</strong>
+      </li>
+      @foreach ($sorteio as $par)
+        <li class="list-group-item d-flex justify-content-center">{{ $par['amigo1'] }} x {{ $par['amigo2'] }}</li>
+      @endforeach
     </ul>
-    <a href="{{ url('/amigos') }}" class="btn btn-dark mt-3">Voltar</a>
+  </div>
+  <a href="/amigos" class="btn btn-dark mt-3" style="width: 320px;">Voltar a pagina principal</a>
 </x-layout>

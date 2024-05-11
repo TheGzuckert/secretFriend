@@ -29,7 +29,9 @@ TODO:
 
 - [x]  criar tela de sorteio e realizar sorteio
 
-- [ ]  criar esquema de validação para inputs
+- [x]  criar esquema de validação para inputs
+
+- [ ] criar popUp para notificar o usuario que com somente um aluno náo é possivel realizar o sorteio
 
 - [ ]  mudar para mysql
 

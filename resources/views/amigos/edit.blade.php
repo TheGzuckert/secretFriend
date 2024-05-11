@@ -12,6 +12,6 @@
          <input type="text" name="email" id="email" class="form-control" value="{{ $amigo->email }}">
        </div>
     </div>
-    <button type="submit" class="btn btn-dark">Atualizar</button>
+    <button type="submit" class="btn btn-dark" style="width: 320px;" id="submitButton">Adicionar</button>
   </form>
 </x-layout>
