@@ -34,7 +34,7 @@ php artisan migrate
 php artisan serve
 ```
 
-### Observações
+### Observações:
   - Acabei optando por utilizar um banco sqlite, pois assim ficaria mais simples desenvolver o projeto sem a necessidade de subir servidor para o banco
   - O projeto foi desenvolvido com o intuito de ser simples e objetivo, por isso ultilzie o Bootstrap que já vem com o Laravel
   - Não é necessário docker para rodar a aplicação
