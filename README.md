@@ -46,6 +46,11 @@ php artisan serve
 - Quase todos os componentes visuais estão com bootstrap, foram poucos os lugares que utilizei css puro
 
 
+### Home
+![image](https://github.com/TheGzuckert/secretFriend/assets/83929799/9126c141-a8c1-4d7d-b772-b00d79a1b7f8)
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
