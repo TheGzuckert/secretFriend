@@ -1,7 +1,7 @@
 ## Bem Vindo ao Desafio do Amigo Secreto
 Primeiramente muito obrigado se você esta lendo isso
 
-O projeto foi desenvolvido na versão 9 do Laravel
+O projeto foi desenvolvido na versão 8 do Laravel
 
 Não tenho muita familiaridade com a linguagem, mas estou aprendendo e me divertindo muito com o processo
 
