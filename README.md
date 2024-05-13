@@ -35,15 +35,15 @@ php artisan serve
 ```
 
 ### Observações:
-  - Acabei optando por utilizar um banco sqlite, pois assim ficaria mais simples desenvolver o projeto sem a necessidade de subir servidor para o banco
-  - O projeto foi desenvolvido com o intuito de ser simples e objetivo, por isso ultilzie o Bootstrap que já vem com o Laravel
-  - Não é necessário docker para rodar a aplicação
+- Acabei optando por utilizar um banco sqlite, pois assim ficaria mais simples desenvolver o projeto sem a necessidade de subir servidor para o banco
+- O projeto foi desenvolvido com o intuito de ser simples e objetivo, por isso utilizei o Bootstrap que já vem com o Laravel
+- Não é necessário docker para rodar a aplicação
 
 ### O que fiz de a mais:
 - Coloquei alguns regex para validação de e-mail dos usuários
 - Coloquei ícones com cores para quando usuário passar com o mouse mudar de cor
-- Consegui deixar duas operações em uma página só (DELETE e GET) na home do projeto
-- Quase todos os componentes visuais estão com bootstrap, foram poucos os lugares que utilizei css puro
+- Padronização de commits
+- PopUps de erros nos e-mails duplicados e quantidade de < 2 para fazer sorteio
 
 
 ### Home
