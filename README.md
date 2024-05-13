@@ -1,7 +1,7 @@
 ## Bem Vindo ao Desafio do Amigo Secreto
 Primeiramente muito obrigado se você esta lendo isso
 
-O projeto foi desenvolvido na versão 8 do Laravel
+O projeto foi desenvolvido na versão 9 do Laravel
 
 Não tenho muita familiaridade com a linguagem, mas estou aprendendo e me divertindo muito com o processo
 
@@ -10,7 +10,7 @@ Bom chega é isso de enrolação e vamos lá!!!
 ### Requisitos:
 - PHP >= 8.0
 - Composer
-- Laravel 8
+- Laravel 9
 
 ## Configurando Ambiente
 
